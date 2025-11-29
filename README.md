@@ -1,133 +1,149 @@
-# Wanderlust - Your Ultimate Travel Blog 🌍✈️
+🌍 Wanderlust – A MERN Stack Travel Blog (Deployed on Kubernetes)
 
-WanderLust is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
+A learning-focused open-source project by Souvik De
 
-![Preview Image](https://github.com/krishnaacharyaa/wanderlust/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
+Wanderlust is a simple yet practical MERN travel blog website, designed for developers who want to learn the MERN stack, master Git/GitHub workflows, and explore DevOps concepts like Docker & Kubernetes.
 
-## [Figma Design File](https://www.figma.com/file/zqNcWGGKBo5Q2TwwVgR6G5/WanderLust--A-Travel-Blog-App?type=design&node-id=0%3A1&mode=design&t=c4oCG8N1Fjf7pxTt-1)
-## [Discord Channel](https://discord.gg/FEKasAdCrG)
+Whether you're a beginner or an experienced developer — this project will help you learn, build, and deploy.
 
-## 🎯 Goal of this project
+🎯 Project Goals
+1. Kickstart Your Open Source Journey
 
-At its core, this project embodies two important aims:
+This project will help you learn:
 
-1. **Start Your Open Source Journey**: It's aimed to kickstart your open-source journey. Here, you'll learn the basics of Git and get a solid grip on the MERN stack and I strongly believe that learning and building should go hand in hand.
-2. **React Mastery**: Once you've got the basics down, a whole new adventure begins of mastering React. This project covers everything, from simple form validation to advanced performance enhancements. And I've planned much more cool stuff to add in the near future if the project hits more number of contributors.
+How to contribute to open source
 
-_I'd love for you to make the most of this project - it's all about learning, helping, and growing in the open-source world._
+How to use Git & GitHub professionally
 
-## Setting up the project locally
+How to work inside a MERN codebase
 
-### Setting up the Backend
+2. Strengthen Your MERN & React Skills
 
-1. **Fork and Clone the Repository**
+Wanderlust includes:
 
-   ```bash
-   git clone https://github.com/{your-username}/wanderlust.git
-   ```
+React fundamentals → forms, routing, components
 
-2. **Navigate to the Backend Directory**
+MERN API integration
 
-   ```bash
-   cd backend
-   ```
+Improvements planned → caching, SSR, performance, and more
 
-3. **Install Required Dependencies**
+🧑‍💻 Author
 
-   ```bash
-   npm i
-   ```
+👤 Name: Souvik De
+💼 Role: Senior Web Developer (Laravel, Node.js, MERN, DevOps Learner)
+📌 GitHub: https://github.com/souvikde319
 
-4. **Set up your MongoDB Database**
+🚀 Focus Areas: MERN, Node.js, Kubernetes, Docker, Terraform, DevOps projects
 
-   - Open MongoDB Compass and connect MongoDB locally at `mongodb://localhost:27017`.
+⚙️ Setting Up the Project Locally
+🚀 Backend Setup
 
-5. **Import sample data**
+1. Clone the Repository
+git clone https://github.com/{your-username}/MERN-application-deployed-kubernetes.git
 
-   > To populate the database with sample posts, you can copy the content from the `backend/data/sample_posts.json` file and insert it as a document in the `wanderlust/posts` collection in your local MongoDB database using either MongoDB Compass or `mongoimport`.
+git clone https://github.com/{your-username}/MERN-application-deployed-kubernetes.git
+Go to Backend Folder
 
-   ```bash
-   mongoimport --db wanderlust --collection posts --file ./data/sample_posts.json --jsonArray
-   ```
+bash
+Copy code
+cd backend
+Install Dependencies
 
-6. **Configure Environment Variables**
+bash
+Copy code
+npm i
+MongoDB Setup
+Connect to:
 
-   ```bash
-   cp .env.sample .env
-   ```
+arduino
+Copy code
+mongodb://localhost:27017
+Import Sample Data (Optional)
 
-7. **Start the Backend Server**
+bash
+Copy code
+mongoimport --db wanderlust --collection posts --file ./data/sample_posts.json --jsonArray
+Set Environment Variables
 
-   ```bash
-   npm start
-   ```
+bash
+Copy code
+cp .env.sample .env
+Start Backend
 
-   > You should see the following on your terminal output on successful setup.
-   >
-   > ```bash
-   > [BACKEND] Server is running on port 5000
-   > [BACKEND] Database connected: mongodb://127.0.0.1/wanderlust
-   > ```
+bash
+Copy code
+npm start
+Expected:
 
-### Setting up the Frontend
+csharp
+Copy code
+[BACKEND] Server is running on port 5000
+[BACKEND] Database connected: mongodb://127.0.0.1/wanderlust
+💻 Frontend Setup
+Open new terminal & go to frontend:
 
-1. **Open a New Terminal**
+bash
+Copy code
+cd frontend
+Install deps:
 
-   ```bash
-   cd frontend
-   ```
+bash
+Copy code
+npm i
+Copy env:
 
-2. **Install Dependencies**
+bash
+Copy code
+cp .env.sample .env.local
+Start server:
 
-   ```bash
-   npm i
-   ```
+bash
+Copy code
+npm run dev
+🐳 Run with Docker
+Make sure Docker & Docker Compose are installed
 
-3. **Configure Environment Variables**
+Clone the repo:
 
-   ```bash
-   cp .env.sample .env.local
-   ```
+bash
+Copy code
+git clone https://github.com/{your-username}/MERN-application-deployed-kubernetes.git
+Go to project:
 
-4. **Launch the Development Server**
+bash
+Copy code
+cd wanderlust
+Update .env.sample if server IP changes
 
-   ```bash
-   npm run dev
-   ```
+Run Docker:
 
-### Setting up with Docker
+bash
+Copy code
+docker-compose up
+Your backend + frontend will build & run automatically.
 
-1.  **Ensure Docker and Docker Compose are Installed**
-    
-2.  **Clone the Repository**
-    
-   ``` bash
-    
-    git clone https://github.com/{your-username}/wanderlust.git
-   ``` 
-3.  **Navigate to the Project Directory**
-    
-    ```bash
-    
-    cd wanderlust
-    
-    ```
-4.  **Update Environment Variables**  - If you anticipate the IP address of the instance might change, update the `.env.sample` file with the new IP address.
+⭐ Support the Project
+If you find this project useful, please consider:
 
-5.  **Run Docker Compose**
-    
-    ```bash
-    
-    docker-compose up
-    ```
-    This command will build the Docker images and start the containers for the backend and frontend, enabling you to access the Wanderlust application.
+➡️ Starring the repository
+➡️ Sharing it with other MERN learners
+➡️ Contributing with features, bugs, or improvements
 
-## 🌟 Ready to Contribute?
+Your support motivates continued updates and Kubernetes-based enhancements 💙
 
-Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
+## 🛠️ Tech Stack & Tools
 
-## 💖 Show Your Support
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-If you find this project interesting and inspiring, please consider showing your support by starring it on GitHub! Your star goes a long way in helping me reach more developers and encourages me to keep enhancing the project.
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
-🚀 Feel free to get in touch with me for any further queries or support, happy to help :)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)
+
+![VS Code](https://img.shields.io/badge/VSCode-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
